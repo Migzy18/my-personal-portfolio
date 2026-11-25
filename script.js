@@ -14,3 +14,15 @@ backToTOPButton.addEventListener('click', function () {
         behavior: 'smooth'
     });
 });
+
+/* Scroll Reveal Animation */
+
+const revealElements = document.querySelectorAll( ".about, .army, .projects, .contact" );
+    
+const revealObserver = new IntersectionObserver( function (entries) { entries.forEach(function (entry) {if (entry.isIntersecting) {entry.target.classList.add("visible");revealObserver.unobserve(entry.target);}});},
+{threshold: 0.1});
+    
+
+revealElements.forEach(function (element) {
+    revealObserver.observe(element);
+});

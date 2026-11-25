@@ -223,4 +223,17 @@ footer p {margin: 5px 0;}
 
 #backToTop:hover {background-color: #ff944d;}
 
+/* Scroll Reveal Animations */
 
+.about, .army, .projects, .contact {opecity:0;
+                                    transform: translateY(30px);
+                                    transition: opacity 0.8s ease, transform 0.8s ease;}
+
+.visible {opacity: 1;
+          transform: translateY(0);}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {.about, .army, .projects, .contact {opacity: 1;
+                                                                             transform: none;
+                                                                             transition: none;}}
+                                                                             
