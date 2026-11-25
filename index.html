@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
       <meta charset="UTF-8">
-      <meta name="viewpoint"  content="width=device-width,  initial-scale=1.0">
+      <meta name="viewport"  content="width=device-width,  initial-scale=1.0">
       <title>Miguel | Personal Portfolio</title>
       <link rel="stylesheet" href="style.css">
 </head>
@@ -10,7 +10,15 @@
 
        <nav>
            <div class="logo">MG.</div>
-           <div> 
+           
+           <button class="menu-toggle" id="menuToggle"
+              aria-label="Toggle navigation"
+              aria-expanded="false"
+              aria-controls="navLinks">
+              &#9776;</button>
+
+
+           <div class="nav-links" id="navlinks"> 
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
